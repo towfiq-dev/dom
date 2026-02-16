@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body id="body-id">
+  <!-- <div>
+    <h1>This is Title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <ul>
+      <li>List list-01</li>
+      <li>List list-02</li>
+      <li>List list-03</li>
+      <li>List list-04</li>
+      <li>List list-05</li>
+    </ul>
+  </div> -->
+
+  <!-- <footer>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt sequi perferendis alias harum ut commodi, perspiciatis dignissimos accusamus nihil saepe ipsam inventore, illum eaque maiores aliquid minus illo aut!</p>
+    <span>Thank You</span>
+  </footer> -->
+  <script>
+  const bodyTag = document.getElementById('body-id')
+  const divTag = document.createElement('div')
+  const h1Tag = document.createElement('h1')
+  h1Tag.innerText = 'This is Heading Title'
+  const pTag = document.createElement('p')
+  pTag.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing.'
+  const ulTag = document.createElement('ul')
+  const li1 = document.createElement('li')
+  li1.innerText = 'List -01'
+  const li2 = document.createElement('li')
+  li2.innerText = 'List -02'
+  const li3 = document.createElement('li')
+  li3.innerText = 'List -03'
+  const footerTag = document.createElement('footer')
+  //const fh1tag = document.createElement(h1)
+  //fh1tag.innerText = 'Lorem ipsum dolor sit amet consectetur'
+  const fh1tag = document.createElement('h1')
+  fh1tag.innerText ='Lorem ipsum dolor sit amet consectetur'
+  const fpTag = document.createElement('p')
+  fpTag.innerText = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore incidunt sequi perferendis alias harum ut commodi, perspiciatis dignissimos accusamus nihil saepe ipsam inventore, illum eaque maiores aliquid minus illo aut!'
+
+
+  divTag.appendChild(h1Tag)
+  divTag.appendChild(pTag)
+  divTag.appendChild(ulTag)
+  ulTag.appendChild(li1)
+  ulTag.appendChild(li2)
+  ulTag.appendChild(li3)
+  bodyTag.appendChild(divTag)
+  footerTag.appendChild(fh1tag)
+  footerTag.appendChild(fpTag)
+  bodyTag.appendChild(footerTag)
+  </script>
+</body>
+</html>

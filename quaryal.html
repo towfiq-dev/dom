@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul>
+    <li class="result">List -01</li>
+    <li class="result">List -02</li>
+    <li class="result">List -03</li>
+    <li class="result">List -04</li>
+    <li class="result">List -05</li>
+  </ul>
+
+  <script>
+  const selects = document.querySelectorAll('.result')
+  //console.log(selects);
+  for(let select of selects){
+    console.log(select.innerText = 'Hello I am Changed');
+    
+  }
+  </script>
+</body>
+</html>

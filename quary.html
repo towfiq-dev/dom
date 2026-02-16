@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="hi">Hello Dom</h1>
+  <h2 id="world">Hello Programmers</h2>
+
+  <ul>
+    <li class="hello">List -01</li>
+    <li class="hello">List -02</li>
+    <li class="hello">List -03</li>
+  </ul>
+
+  <script>
+    const result = document.querySelector('.hello').innerText = 'Hello World'
+    console.log(result);
+    const result1 =document.querySelector('#world').innerText = 'I am Towfiqul Islam'
+    console.log(result1);
+    
+    const changeTag = document.querySelector('#hi')
+    changeTag.innerHTML = '<p>I am Changed</p>'
+  </script>
+</body>
+</html>
